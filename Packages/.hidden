@@ -1,0 +1,26 @@
+# Installed Dependencies
+# https://packagecontrol.io/docs/dependencies
+backrefs
+bs4
+dateutil
+markupsafe
+mdpopups
+numpy
+pygments
+pymdownx
+python-jinja2
+python-markdown
+pytz
+pyyaml
+ssl-linux
+
+# Packages with a .no-sublime-package
+Anaconda
+Babel
+BetterFindBuffer
+C Improved
+HTML-CSS-JS Prettify
+PlainTasks
+PyV8
+SublimeAStyleFormatter
+TodoReview
