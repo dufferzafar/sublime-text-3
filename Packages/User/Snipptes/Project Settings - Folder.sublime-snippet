@@ -1,0 +1,17 @@
+<snippet>
+    <description>A folder entry in project</description>
+    <content><![CDATA[
+{
+    "folder_exclude_patterns":
+    [
+    ],
+    "follow_symlinks": true,
+    "file_exclude_patterns":
+    [
+    ],
+    "path": "."
+}
+]]></content>
+    <tabTrigger>fol</tabTrigger>
+    <scope>source.json.sublime.project</scope>
+</snippet>

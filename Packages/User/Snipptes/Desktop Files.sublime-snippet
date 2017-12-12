@@ -1,0 +1,15 @@
+<snippet>
+	<description>A .desktop file template</description>
+    <content><![CDATA[
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=${1:Name}
+Comment=${2:Description}
+Exec=${3:/path/to/executable}
+Terminal=false
+Icon=${4:/path/to/icon.png}
+# Type=Application
+# MimeType=text/plain;
+# Categories=TextEditor;Development;Utility;
+]]></content>
+</snippet>

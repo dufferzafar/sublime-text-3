@@ -1,0 +1,19 @@
+<snippet>
+    <description>Basic Project Settings</description>
+    <content><![CDATA[
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": ".",
+            "folder_exclude_patterns": [],
+            "file_exclude_patterns": []
+        }
+    ],
+    "settings": {}
+}
+]]></content>
+    <tabTrigger>new</tabTrigger>
+    <scope>source.json.sublime.project</scope>
+</snippet>

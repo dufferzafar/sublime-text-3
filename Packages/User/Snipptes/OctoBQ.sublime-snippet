@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{% blockquote [author[, source]] [link] [source_link_title] %}
+Quote string
+{% endblockquote %}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>octobq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html.markdown.gfm</scope>
+</snippet>
