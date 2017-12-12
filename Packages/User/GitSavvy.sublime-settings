@@ -1,0 +1,17 @@
+// ============================================================================
+//                 GitSavvy is an amazing Git (& Github) plugin
+//                     https://github.com/divmain/GitSavvy/
+// ============================================================================
+
+{
+    "prompt_before_destructive_action": true,
+    "dev_mode": false,
+
+    "show_commit_diff": "full",
+    "inline_diff_auto_scroll": true,
+
+    "show_panel_for": ["pull", "push"],
+
+    // "git_graph_args": ["log", "--oneline", "--graph", "--decorate"],
+    "git_graph_args": ["log", "--pretty=format:%h%d %s (%ar) <%an>", "--graph"],
+}
