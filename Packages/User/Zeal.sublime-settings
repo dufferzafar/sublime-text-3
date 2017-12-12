@@ -1,0 +1,32 @@
+// ============================================================================
+//                    Plugin for Zeal Documentation Browser
+//                       https://github.com/zealdocs/zeal
+// ============================================================================
+{
+  "zeal_command": "/usr/bin/zeal",
+
+  "mapping_sort" : true,
+
+  "language_mapping": {
+    "Autohotkey": {"lang": "ahk", "zeal_lang": "autohotkey"},
+    "CSS": {"lang": "css", "zeal_lang": "css"},
+    "Go": {"lang": "go", "zeal_lang": "go"},
+
+    "Bootstrap": {"lang": "html", "zeal_lang": "bootstrap"},
+    "HTML": {"lang": "html", "zeal_lang": "html"},
+
+    "JavaScript": {"lang": "javascript", "zeal_lang": "javascript"},
+    "jQuery": {"lang": "javascript", "zeal_lang": "jquery"},
+    "Less": {"lang": "less", "zeal_lang": "less"},
+    "Lua": {"lang": "lua", "zeal_lang": "lua"},
+    "PHP": {"lang": "php", "zeal_lang": "php"},
+
+    "Flask": {"lang": "python", "zeal_lang": "flask"},
+    "PyQt": {"lang": "python", "zeal_lang": "qt"},
+    "Python": {"lang": "python", "zeal_lang": "python"},
+    "SQLAlchemy": {"lang": "python", "zeal_lang": "sqlalchemy"},
+
+    "Java": {"lang": "java", "zeal_lang": "java"},
+    "C/C++": {"lang": "ccpp", "zeal_lang": "c++"},
+  }
+}
