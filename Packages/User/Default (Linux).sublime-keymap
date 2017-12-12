@@ -1,0 +1,173 @@
+[
+    // ========================================================================
+    //                   Custom Hotkeys for Default Commands
+    // ========================================================================
+
+    // Fix a Command pallette regression introduced in build 3156
+    // TODO: Remove this in later builds
+    { "keys": ["ctrl+shift+p"], "command": "select_command_palette_text" },
+
+    // Add multiple cursors to lines
+    // On Ubuntu Alt+Ctrl+Up is used to change workspaces
+    { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+    // Every other application I use creates a new tab with Ctrl + T
+    { "keys": ["ctrl+t"], "command": "new_file" },
+
+    // Jump, back and forward in editing positing
+    { "keys": ["alt+["], "command": "jump_back" },
+    { "keys": ["alt+]"], "command": "jump_forward" },
+
+    // Sort & Unique
+    { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
+    { "keys": ["f10"], "command": "permute_lines", "args": {"operation": "unique"} },
+
+    // For the times when Home/End keys feel hard to reach
+    { "keys": ["ctrl+up"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["ctrl+down"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+    // I don't like the stack based view
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+
+    // Emmet overrides this, so we override emmet :(|)
+    { "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
+
+    // Line numbers are useless (except when they're not!)
+    { "keys": ["ctrl+alt+l"], "command": "toggle_setting", "args": { "setting": "line_numbers" } },
+
+    // Hide / Show Menubar
+    { "keys": ["ctrl+alt+m"], "command": "toggle_menu"},
+
+    // Enter opens the 'File' in Find Results
+    { "keys": ["enter"], "command": "next_result",
+                         "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]},
+
+    // ========================================================================
+    //                      Hotkeys for My Custom Plugins
+    //                    They should be on this repo itself
+    // ========================================================================
+
+    // Multi cursor management
+    // Add Cursor
+    { "keys": ["ctrl+alt+'"], "command": "cursor", "args": {"action": "add"}},
+    { "keys": ["ctrl+alt+;"], "command": "cursor", "args": {"action": "remove"}},
+    { "keys": ["ctrl+alt+/"], "command": "cursor", "args": {"action": "show"}},
+
+
+    // ========================================================================
+    //                      Hotkeys for 3rd Party Plugins
+    // ========================================================================
+
+    // ------------------------------------------------------------------------
+    //                           These run everywhere
+    // ------------------------------------------------------------------------
+
+    // SideBarEnhancements
+
+    // Open currently opened file's folder in File Browser
+    { "keys": ["ctrl+alt+z"], "command": "side_bar_reveal" },
+
+    // Open sidebar with current file selected
+    { "keys": ["ctrl+k", "ctrl+r"], "command": "reveal_in_side_bar" },
+    // { "keys": ["ctrl+k", "ctrl+r"], "command": "focus_file_on_sidebar" },
+
+    // Launch a terminal
+    { "keys": ["ctrl+alt+c"], "command": "open_terminal" },
+    { "keys": ["ctrl+alt+shift+c"], "command": "open_terminal_project_folder" },
+
+    // Clickable URLs
+    { "keys": ["ctrl+alt+enter"], "command": "open_url" },
+
+    // Copy file name
+    { "keys": ["ctrl+shift+c"], "command": "side_bar_copy_path" },
+
+    // TextPastry
+    { "keys": ["alt+shift+t"], "command": "text_pastry_show_menu" },
+    { "keys": ["alt+shift+n"], "command": "text_pastry_show_command_line", "args": { "text": "1" } },
+
+    // Insert Nums has a subset of
+    // { "keys": ["shift+alt+t"], "command": "prompt_insert_nums" },
+
+    // Advanced New File
+    { "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new" },
+
+    // Git Savvy
+    { "keys": ["ctrl+\\", "ctrl+\\"], "command": "gs_show_status" },
+    { "keys": ["ctrl+\\", "d"],       "command": "gs_inline_diff" },
+    { "keys": ["ctrl+\\", "ctrl+d"],  "command": "gs_inline_diff" },
+    { "keys": ["ctrl+\\", "f"],       "command": "gs_diff" },
+    { "keys": ["ctrl+\\", "ctrl+f"],  "command": "gs_diff" },
+    { "keys": ["ctrl+\\", "l"],       "command": "gs_log" },
+    { "keys": ["ctrl+\\", "ctrl+l"],  "command": "gs_log" },
+
+    // Githubinator: Copy to clipboard
+    { "keys": ["ctrl+shift+\\"], "command": "githubinator", "args": {"copyonly": true}},
+
+    // GitGutter
+    { "keys": ["ctrl+."], "command": "git_gutter_next_change" },
+    { "keys": ["ctrl+,"], "command": "git_gutter_prev_change" },
+
+    // Todo Review
+    { "keys": [ "ctrl+\\", "ctrl+t" ], "command": "todo_review" },
+
+    // Similar to firefox
+    { "keys": ["alt+9"], "command": "last_view" },
+
+    // Wrap Lines Plus
+    { "keys": ["alt+q", "q"], "command": "wrap_lines_plus" },
+    { "keys": ["alt+q", "8"], "command": "wrap_lines_plus", "args": {"width": 80}},
+
+    // Expand selection to quotes
+    { "keys": ["ctrl+'"], "command": "expand_region" },
+    // {"keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+
+    // Plugin: Random Everything
+    // {"keys": [ "ctrl+r", "ctrl+w" ], "command": "random_word"},
+    // {"keys": [ "ctrl+r", "ctrl+t" ], "command": "random_text"},
+    // {"keys": [ "ctrl+r", "ctrl+i" ], "command": "random_uuid"},
+    // {"keys": [ "ctrl+r", "ctrl+f" ], "command": "random_first_name"},
+    // {"keys": [ "ctrl+r", "ctrl+l" ], "command": "random_last_name"},
+    // {"keys": [ "ctrl+r", "ctrl+n" ], "command": "random_full_name"},
+    // {"keys": [ "ctrl+r", "ctrl+e" ], "command": "random_email"},
+    // {"keys": [ "ctrl+r", "ctrl+u" ], "command": "random_url"},
+
+    // ------------------------------------------------------------------------
+    //        Only run in some specifc context (like Python files only)
+    // ------------------------------------------------------------------------
+
+    // Anaconda
+    { "keys": ["ctrl+alt+d"],   "command": "anaconda_doc",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+    { "keys": ["ctrl+alt+g"],   "command": "anaconda_goto",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+    { "keys": ["ctrl+alt+f"],   "command": "anaconda_find_usages",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+    { "keys": ["ctrl+shift+8"], "command": "anaconda_auto_format",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+
+    // Fold Python Docstrings
+    { "keys": ["ctrl+shift+-"], "command": "fold_python_docstrings",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+    { "keys": ["ctrl+shift+="], "command": "unfold_python_docstrings",
+                                "context": [{"key": "selector", "operator": "equal", "operand": "source.python"}]},
+
+    // Markdown Preview
+    { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"default"} ,
+                         "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown, text.html.markdown.gfm"}]},
+
+    // Emmet Increments/Decrements | Ctrl Up/Down have been remapped as Home/End.
+    { "keys": [ "alt+up" ],   "command": "run_emmet_action", "args": {"action": "increment_number_by_1"},
+                              "context": [{"key": "emmet_action_enabled.increment_number_by_1"} ] },
+    { "keys": [ "alt+down" ], "command": "run_emmet_action", "args": {"action": "decrement_number_by_1"},
+                              "context": [{"key": "emmet_action_enabled.decrement_number_by_1"} ] },
+
+    // Convert Case. Runs only when some text is selected.
+    { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case",
+                                    "context": [{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }] },
+    { "keys": ["ctrl+k", "ctrl+s"], "command": "convert_to_snake",
+                                    "context": [{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }] },
+    { "keys": ["ctrl+k", "ctrl+c"], "command": "convert_to_camel",
+                                    "context": [{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }] },
+]
