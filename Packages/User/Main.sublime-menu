@@ -1,0 +1,26 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "separator",
+                "caption": "-"
+            },
+            {
+                "id": "settings-user",
+                "command": "open_file", "args":
+                {"file": "${packages}/User/Preferences.sublime-settings"},
+                "caption": "Settings – User"
+            },
+            {
+                "id": "keybindings-user",
+                "command": "open_file", "args":
+                {"file": "${packages}/User/Default (Linux).sublime-keymap"},
+                "caption": "Key Bindings – User"
+            }
+        ]
+    }
+]
