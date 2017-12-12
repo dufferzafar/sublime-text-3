@@ -1,0 +1,31 @@
+# Contains auto-generated Syntax files etc.
+# (not too sure though)
+GitSavvy
+ANSIescape
+
+# I wonder why it is not in the Cache directory above
+Package Control.cache
+
+# Files created by the FileHistory plugin
+FileHistory.json
+FileHistory_20171210.json
+FileHistory_20171211.json
+FileHistory_20171212.json
+
+# Backups of the preferences
+Preferences.sublime-settings.0.bak
+Preferences.sublime-settings.1.bak
+
+# _Something_
+bh_unicode_properties.cache
+
+# Package Control stuff
+Package Control.last-run
+Package Control.user-ca-bundle
+Package Control.merged-ca-bundle
+
+# Gets updated way more often than I'd like
+TextPastryHistory.sublime-settings
+
+# From the package OverrideAudit
+OverrideAudit.status
