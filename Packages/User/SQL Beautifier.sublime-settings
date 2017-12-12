@@ -1,0 +1,8 @@
+{
+    "keyword_case": "upper",
+    "identifier_case": "lower",
+    "strip_comments": true,
+    "indent_tabs": false,
+    "indent_width": 5,
+    "reindent": false
+}
