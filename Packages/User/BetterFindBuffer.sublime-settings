@@ -1,0 +1,7 @@
+// ============================================================================
+//           Improves the Find Results Buffer by adding hotkeys etc.
+//                  https://github.com/aziz/BetterFindBuffer/
+// ============================================================================
+{
+    "fold_path_prefix": false
+}
