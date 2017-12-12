@@ -1,0 +1,36 @@
+// ============================================================================
+//                  Plugin to list all TODOs etc in a Project
+//             https://github.com/jonathandelgado/SublimeTodoReview
+// ============================================================================
+{
+    "patterns": {
+        "BUG": "BUG[\\s]*?:+(?P<bug>.*)$",
+        "FIXME": "FIXME[\\s]*?:+(?P<fixme>.*)$",
+        "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
+        "TODO": "TODO[\\s]*?:+(?P<todo>.*)$"
+    },
+    "exclude_folders": [
+        "*/_Help/*",
+        "*.git/*",
+        "*/tmp/*",
+        "*/env/*",
+        "*/vendor/*",
+        "*/build/*",
+        "*/_build/*",
+        "*/__pycache__/*",
+        "*/node_modules/*",
+        "*/bootstrap/*",
+        "*/fontawesome/*"
+    ],
+    "exclude_files": [
+        "*.css",
+        "vendor.js",
+        ".tags",
+        "jquery*.js",
+        "*.pyc",
+        "*.patch",
+        "*.sublime-workspace",
+        "*.sublime-project"
+    ],
+    "render_include_folder": false,
+}
