@@ -1,0 +1,14 @@
+// ==========================================================================
+//      I use BetterFindBuffer Package, but it doesn't have a dark theme
+// ==========================================================================
+
+{
+  "color_scheme": "Packages/User/Monokai Extended Dark.tmTheme",
+  // "color_scheme": "Packages/BetterFindBuffer/FindResults.hidden-tmTheme",
+  "draw_indent_guides": false,
+  "gutter": false,
+  "margin": 8,
+  "rulers": [],
+  "spell_check": false,
+  "word_wrap": true
+}
