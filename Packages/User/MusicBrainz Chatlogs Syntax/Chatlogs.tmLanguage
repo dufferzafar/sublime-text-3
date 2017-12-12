@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string></string>
+	</array>
+	<key>name</key>
+	<string>MB Chatlogs</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#line</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>line</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.date.git-blame</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.line-number.git-blame</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>constant.string</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\d\d:\d\d:\d\d)\s(&lt;.*?&gt;)\s(.*)</string>
+			<key>name</key>
+			<string>log.line</string>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>source.txt</string>
+	<key>uuid</key>
+	<string>32bac464-7322-431a-9e57-7b64337d18a3</string>
+</dict>
+</plist>

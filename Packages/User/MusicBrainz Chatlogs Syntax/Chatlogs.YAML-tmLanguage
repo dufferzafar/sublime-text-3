@@ -1,0 +1,14 @@
+fileTypes: ['']
+name: MB Chatlogs
+patterns:
+- {include: '#line'}
+repository:
+  line:
+    captures:
+      '1': {name: constant.numeric.date.git-blame}
+      '2': {name: variable.parameter.line-number.git-blame}
+      '3': {name: constant.string}
+    match: (\d\d:\d\d:\d\d)\s(<.*?>)\s(.*)
+    name: log.line
+scopeName: source.txt
+uuid: 32bac464-7322-431a-9e57-7b64337d18a3

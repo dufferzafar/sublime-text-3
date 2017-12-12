@@ -1,0 +1,25 @@
+// [PackageDev] target_format: plist, ext: tmLanguage
+{ "name": "MB Chatlogs",
+  "scopeName": "source.txt",
+  "fileTypes": [""],
+
+  "patterns": [
+    { "include": "#line" }
+  ],
+
+  "repository": {
+      "line": {
+          "match": "(\\d\\d:\\d\\d:\\d\\d)\\s(<.*?>)\\s(.*)",
+          "name": "log.line",
+          "captures": {
+              // "1": {"name": "comment.git-blame"},
+              "1": {"name": "constant.numeric.date.git-blame"},
+              "2": {"name": "variable.parameter.line-number.git-blame"},
+              "3": {"name": "constant.string"}
+              // "2": {"name": "support.function.author.git-blame"}
+          }
+      }
+  },
+
+  "uuid": "32bac464-7322-431a-9e57-7b64337d18a3"
+}
