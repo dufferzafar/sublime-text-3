@@ -19,6 +19,7 @@ python-markdown/
 pytz/
 pyyaml/
 ssl-linux/
+regex/
 
 # Packages with a .no-sublime-package
 Anaconda/
@@ -30,3 +31,7 @@ PlainTasks/
 PyV8/
 SublimeAStyleFormatter/
 TodoReview/
+Pretty JSON/
+
+# BetterFindBuffer causes this
+Default/Find Results.hidden-tmLanguage
