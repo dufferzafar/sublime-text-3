@@ -1,0 +1,5 @@
+{
+    "parser": "markdown",
+    // "enable_autoreload": true,
+    "markdown_filetypes": [".md", ".mkd", ".markdown", ".mdown"],
+}
