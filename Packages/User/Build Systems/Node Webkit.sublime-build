@@ -1,0 +1,5 @@
+{
+    "cmd": ["nw.exe", "--enable-logging", "${project_path:${file_path}}"],
+    "working_dir": "${project_path:${file_path}}",
+    "path": "F:\\[Softwares]\\[PowerPack]\\Cmder\\vendor\\node-webkit"
+}

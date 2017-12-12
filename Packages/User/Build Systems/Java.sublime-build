@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "javac \"${file}\"",
+    "selector": "source.java",
+    "path": "C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin"
+}

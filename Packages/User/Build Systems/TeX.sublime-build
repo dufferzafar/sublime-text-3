@@ -1,0 +1,8 @@
+{
+    "cmd": ["latexmk -pdf -silent -interaction=nonstopmode $file_name"],
+    "shell": true,
+    "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/",
+    "file_regex": "^(…*?):([0-9]*):?([0-9]*)",
+    "selector": "text.tex.latex"
+}
+
