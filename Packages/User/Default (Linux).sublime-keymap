@@ -78,7 +78,11 @@
     { "keys": ["ctrl+alt+shift+c"], "command": "open_terminal_project_folder" },
 
     // Clickable URLs
-    { "keys": ["ctrl+alt+enter"], "command": "open_url" },
+    { "keys": ["ctrl+shift+u"], "command": "plain_tasks_open_url" },
+    // Ctrl + Alt + Enter conflicts with "Replace All", not anymore!
+    { "keys": ["ctrl+alt+enter"], "command": "plain_tasks_open_url",
+         "context": [{"key": "panel_has_focus", "operator": "not_equal", "operand": true}]
+    },
 
     // Copy file name
     { "keys": ["ctrl+shift+c"], "command": "side_bar_copy_path" },
