@@ -19,6 +19,9 @@
     { "keys": ["alt+["], "command": "jump_back" },
     { "keys": ["alt+]"], "command": "jump_forward" },
 
+    // Alt + D is similar to Ctrl + D
+    { "keys": ["alt+d"], "command": "find_all_under" },
+
     // Sort & Unique
     { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
     { "keys": ["f10"], "command": "permute_lines", "args": {"operation": "unique"} },
