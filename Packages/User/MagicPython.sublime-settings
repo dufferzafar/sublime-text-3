@@ -5,5 +5,16 @@
 	[
 		"py",
 		"example"
-	]
+	],
+
+    // https://github.com/timothycrosley/isort/wiki/isort-Settings
+    "isort": {
+        "multi_line_output": 3,
+        "import_heading_future": "For Python 2/3 Comaptibility",
+        "import_heading_stdlib": "Python's stdlib",
+        "import_heading_thirdparty": "External Packages",
+        // "import_heading_firstparty": "My Stuff",
+        "import_heading_localfolder": "Placed in the current folder",
+    },
+    // "isort_on_save": true,
 }
