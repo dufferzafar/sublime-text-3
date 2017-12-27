@@ -29,14 +29,10 @@ class GitRegionHistoryCommand(sublime_plugin.TextCommand):
         filename = os.path.basename(self.view.file_name())
         filepath = os.path.dirname(self.view.file_name())
 
-        print(l1, l2, filename)
-        GIT_LOG[-1] = GIT_LOG[-1].format(l1=l1, l2=l2, f=filename)
-
-        # print(GIT_LOG)
+        GIT_LOG[-1] = GIT_LOG[-1].format(l1=l1, l2=l2, f=filename)        
 
         try:
-            out = subprocess.check_output(GIT_LOG, cwd=filepath)
-            # print(out)
+            out = subprocess.check_output(GIT_LOG, cwd=filepath)            
         except subprocess.CalledProcessError:
             out = ""
 
