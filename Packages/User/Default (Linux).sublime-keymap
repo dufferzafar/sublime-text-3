@@ -3,10 +3,6 @@
     //                   Custom Hotkeys for Default Commands
     // ========================================================================
 
-    // Fix a Command pallette regression introduced in build 3156
-    // TODO: Remove this in later builds
-    { "keys": ["ctrl+shift+p"], "command": "select_command_palette_text" },
-
     // Add multiple cursors to lines
     // On Ubuntu Alt+Ctrl+Up is used to change workspaces
     { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
