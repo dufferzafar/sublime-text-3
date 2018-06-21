@@ -10,6 +10,18 @@
                 "caption": "-"
             },
             {
+                "id": "menu-user",
+                "command": "open_file", "args":
+                {"file": "${packages}/User/Main.sublime-menu"},
+                "caption": "Menu – User"
+            },
+            {
+                "id": "pallette-user",
+                "command": "open_file", "args":
+                {"file": "${packages}/User/Command Pallette.sublime-commands"},
+                "caption": "Command Pallette – User"
+            },
+            {
                 "id": "settings-user",
                 "command": "open_file", "args":
                 {"file": "${packages}/User/Preferences.sublime-settings"},
@@ -20,7 +32,7 @@
                 "command": "open_file", "args":
                 {"file": "${packages}/User/Default (Linux).sublime-keymap"},
                 "caption": "Key Bindings – User"
-            }
+            },
         ]
     }
 ]
