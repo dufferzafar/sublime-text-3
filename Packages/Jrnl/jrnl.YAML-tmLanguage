@@ -1,0 +1,15 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: jrnl
+scopeName: text.html.markdown.gfm
+fileTypes: []
+uuid: 59025533-e57b-4d5e-a1e2-0b432efacec3
+
+patterns:
+- comment: Tags
+  name: markup.bold
+  match: '(^|\s)@(\w+)'
+
+- comment: Datetime
+  name: markup.underline.bold
+  match: '([0-9]+)-([0-9]+)-([0-9]+) ([0-9]+):([0-9]+)'
