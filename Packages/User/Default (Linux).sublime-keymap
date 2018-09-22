@@ -130,6 +130,9 @@
     { "keys": ["ctrl+i", "ctrl+t"], "command": "insert_date_panel"},
     { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_date"},
 
+    // Jrnl Plugin: https://github.com/dufferzafar/sublime-text-3/tree/master/Packages/Jrnl
+    { "keys": ["ctrl+i", "ctrl+i"], "command": "jrnl_open", "args": {"jrnl": "idea", "is_path": false}},
+
     // Plugin: Random Everything
     // {"keys": [ "ctrl+r", "ctrl+w" ], "command": "random_word"},
     // {"keys": [ "ctrl+r", "ctrl+t" ], "command": "random_text"},
