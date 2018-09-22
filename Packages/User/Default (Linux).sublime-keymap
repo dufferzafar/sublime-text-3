@@ -126,6 +126,10 @@
     { "keys": ["ctrl+'"], "command": "expand_region" },
     // {"keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
 
+    // Insert Date
+    { "keys": ["ctrl+i", "ctrl+t"], "command": "insert_date_panel"},
+    { "keys": ["ctrl+i", "ctrl+d"], "command": "insert_date"},
+
     // Plugin: Random Everything
     // {"keys": [ "ctrl+r", "ctrl+w" ], "command": "random_word"},
     // {"keys": [ "ctrl+r", "ctrl+t" ], "command": "random_text"},
