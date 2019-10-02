@@ -3,4 +3,5 @@
   "debounce_delay": 250,
   "ignore_whitespace": "none",
   "show_markers_on_untracked_file": false,
+  "show_line_annotation": false,
 }

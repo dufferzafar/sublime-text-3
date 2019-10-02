@@ -11,19 +11,42 @@
     },
     "exclude_folders": [
         "*/_Help/*",
+
         "*.git/*",
+
+        "*/data/*",
+        "*/libsvm/*",
+        "*/models/*",
+
         "*/tmp/*",
-        "*/env/*",
         "*/vendor/*",
+        "*/env/*",
+
         "*/build/*",
         "*/_build/*",
+
         "*/__pycache__/*",
+
         "*/node_modules/*",
         "*/bootstrap/*",
-        "*/fontawesome/*"
+        "*/fontawesome/*",
+
+        // Bitcoin
+        "*/build-aux/*",
+        "*/autom4te.cache/*",
+        "*/locale/*",
+
     ],
     "exclude_files": [
+        // Bitcoin
+        "configure",
+        "libtool",
+        "Doxyfile",
+        "Doxyfile.in",
+        "*.log",
+
         "*.css",
+        "*.ipynb",
         "vendor.js",
         ".tags",
         "jquery*.js",

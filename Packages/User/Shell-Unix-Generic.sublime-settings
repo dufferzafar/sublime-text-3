@@ -2,6 +2,8 @@
 	"extensions":
 	[
 		".zshrc",
-		".gitignore"
+		"zsh",
+		"sh",
+		"bash"
 	]
 }
