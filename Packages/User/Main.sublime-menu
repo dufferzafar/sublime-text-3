@@ -22,6 +22,12 @@
                 "caption": "Command Pallette – User"
             },
             {
+                "id": "mousebindings-user",
+                "command": "open_file", "args":
+                {"file": "${packages}/User/Default (Linux).sublime-mousemap"},
+                "caption": "Mouse Bindings – User"
+            },
+            {
                 "id": "settings-user",
                 "command": "open_file", "args":
                 {"file": "${packages}/User/Preferences.sublime-settings"},
