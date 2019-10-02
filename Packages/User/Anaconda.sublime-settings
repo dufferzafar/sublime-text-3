@@ -27,14 +27,20 @@
   "pep257": true,
   "pep257_ignore": [
     "D100",
+    "D102",
+    "D103",
     "D209",
     "D202",
     "D203",
-    "D102",
-    "D101"
+    "D101",
+    "D212",
   ],
+
+  // "pep8_ignore": [],
 
   "pep8": true,
   "pep8_max_line_length": 79,
   "pep8_rcfile": false,
+
+  // "mypy": true,
 }
