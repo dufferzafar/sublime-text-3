@@ -1,4 +1,8 @@
 {
+	"extensions":
+	[
+		"xml.dist"
+	],
 	"hidden_extensions":
 	[
 		"rss",

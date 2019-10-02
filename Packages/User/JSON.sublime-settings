@@ -2,8 +2,14 @@
 	"ensure_newline_at_eof_on_save": false,
 	"extensions":
 	[
-		"movie-data",
+		".csslintrc",
+		".bowerrc",
 		"ipynb",
-		".jrnl_config"
+		".jscsrc",
+		"geojson",
+		".eslintrc",
+		".jrnl_config",
+		".jshintrc",
+		"movie-data"
 	]
 }
