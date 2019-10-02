@@ -18,13 +18,15 @@
     // Alt + D is similar to Ctrl + D
     { "keys": ["alt+d"], "command": "find_all_under" },
 
+    // Alt + D is similar to Ctrl + D
+    { "keys": ["alt+z"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
     // Sort & Unique
     { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
     { "keys": ["f10"], "command": "permute_lines", "args": {"operation": "unique"} },
 
-    // For the times when Home/End keys feel hard to reach
-    { "keys": ["ctrl+up"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-    { "keys": ["ctrl+down"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    // This scrolls while not changing the cursor's position
+    { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 3.0 } },
+    { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -3.0 } },
 
     // I don't like the stack based view
     { "keys": ["ctrl+tab"], "command": "next_view" },
@@ -42,6 +44,17 @@
     // Enter opens the 'File' in Find Results
     { "keys": ["enter"], "command": "next_result",
                          "context": [{"key": "selector", "operator": "equal", "operand": "text.find-in-files" }]},
+
+    // Ctrl + Shift + Space is too hard to press
+    { "keys": ["ctrl+shift+'"], "command": "expand_selection", "args": {"to": "indentation"} },
+
+    { "keys": ["ctrl+shift+a"], "command": "arithmetic"},
+
+    { "keys": ["alt+ctrl+c"], "command": "toggle_setting", "args": {"setting": "draw_centered"} },
+
+    // The default hotkeys are hard to reach
+    { "keys": ["alt+ctrl+g"],   "command": "goto_definition" },
+    { "keys": ["alt+ctrl+r"],   "command": "goto_reference" },
 
     // ========================================================================
     //                      Hotkeys for My Custom Plugins
@@ -73,8 +86,8 @@
     // { "keys": ["ctrl+k", "ctrl+r"], "command": "focus_file_on_sidebar" },
 
     // Launch a terminal
-    { "keys": ["ctrl+alt+c"], "command": "open_terminal" },
-    { "keys": ["ctrl+alt+shift+c"], "command": "open_terminal_project_folder" },
+    // { "keys": ["ctrl+alt+c"], "command": "open_terminal" },
+    // { "keys": ["ctrl+alt+shift+c"], "command": "open_terminal_project_folder" },
 
     // Clickable URLs
     { "keys": ["ctrl+shift+u"], "command": "plain_tasks_open_url" },
@@ -119,12 +132,16 @@
     { "keys": ["alt+9"], "command": "last_view" },
 
     // Wrap Lines Plus
-    { "keys": ["alt+q", "q"], "command": "wrap_lines_plus" },
-    { "keys": ["alt+q", "8"], "command": "wrap_lines_plus", "args": {"width": 80}},
+    // { "keys": ["alt+q", "q"], "command": "wrap_lines_plus" },
+    // { "keys": ["alt+q", "8"], "command": "wrap_lines_plus", "args": {"width": 80}},
 
     // Expand selection to quotes
     { "keys": ["ctrl+'"], "command": "expand_region" },
     // {"keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+
+    // Zeal search
+    { "keys": ["f1"], "command": "zeal_search_selection" },
+    { "keys": ["shift+f1"], "command": "zeal_search" },
 
     // Insert Date
     { "keys": ["ctrl+i", "ctrl+t"], "command": "insert_date_panel"},
@@ -132,6 +149,10 @@
 
     // Jrnl Plugin: https://github.com/dufferzafar/sublime-text-3/tree/master/Packages/Jrnl
     { "keys": ["ctrl+i", "ctrl+i"], "command": "jrnl_open", "args": {"jrnl": "idea", "is_path": false}},
+
+    // Render RST
+    // { "keys": ["alt+ctrl+r"], "command": "render_rst", "context":
+    //       [{ "key": "selector", "operator": "equal", "operand": "text.restructuredtext" }] },
 
     // Plugin: Random Everything
     // {"keys": [ "ctrl+r", "ctrl+w" ], "command": "random_word"},
@@ -146,6 +167,9 @@
     // ------------------------------------------------------------------------
     //        Only run in some specifc context (like Python files only)
     // ------------------------------------------------------------------------
+
+    // Terminus: https://github.com/randy3k/Terminus
+    { "keys": ["ctrl+w"], "command": "terminus_close", "context": [{"key": "setting.terminus_view"}] },
 
     // Anaconda
     { "keys": ["ctrl+alt+d"],   "command": "anaconda_doc",

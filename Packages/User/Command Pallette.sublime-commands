@@ -36,10 +36,19 @@
     { "caption": "Tools: New Snippet", "command": "new_snippet" },
 
     { "caption": "View: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
     { "caption": "View: Toggle Distraction Free mode", "command": "toggle_distraction_free" },
     { "caption": "View: Toggle Fullscreen", "command": "toggle_full_screen" },
+
+    { "caption": "View: Toggle Menu", "command": "toggle_menu" },
     { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"} },
+
+    // These are already there in the pallette
+    // { "caption": "View: Toggle Tabs", "command": "toggle_tabs" },
+    // { "caption": "View: Toggle Status Bar", "command": "toggle_status_bar" },
+
     { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} },
+    { "caption": "View: Toggle Draw Centered", "command": "toggle_setting", "args": {"setting": "draw_centered"} },
 
     { "caption": "Trim Trailing White Space", "command": "trim_trailing_white_space" },
 
@@ -50,19 +59,53 @@
     { "caption": "ExportHTML - Monokai", "command": "export_html",
       "args": {
             "numbers": true,
-            "wrap": 900,
+            "wrap": 1500,
             "browser_print": false,
             "multi_select": true,
             "style_gutter": true,
+            "no_header": true,
             "color_scheme": "Packages/User/Monokai Extended Dark.tmTheme",
+        }
+    },
+
+    { "caption": "ExportHTML - White Print", "command": "export_html",
+      "args": {
+            "numbers": false,
+            "wrap": 900,
+            "browser_print": true,
+            "no_header": true,
+            // "multi_select": true,
+            // "style_gutter": true,
+            // "color_scheme": "Packages/User/Monokai Extended Dark.tmTheme",
         }
     },
 
     { "caption": "Center Comment", "command": "center_comment" },
 
     // ========================================================================
+    //              Commands for the External Commands Package
+    // ========================================================================
+    { "caption": "External Command: Filter through command", "command": "filter_through_command" },
+    { "caption": "External Command: Insert command output", "command": "insert_command_output" },
+
+    {
+        "caption": "External Command: Line Numbers", "command": "filter_through_command",
+        "args": { "cmdline": "cat -n" }
+    },
+
+    // ========================================================================
     //              Commands from the amazing Reg Replace package
     // ========================================================================
+
+    {
+        "caption": "Reg Replace: Fold Markdown Links", "command": "reg_replace",
+        "args": {"replacements": ["markdown_links"], "action": "fold"}
+    },
+
+    {
+        "caption": "Reg Replace: Unfold Markdown Links", "command": "reg_replace",
+        "args": {"replacements": ["markdown_links"], "action": "unfold"}
+    },
 
     {
         "caption": "Reg Replace: Fold All Comments", "command": "reg_replace",
